@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Crypto - Secure File Encryption</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div id="animation-container"></div>
+    <div class="container">
+        <h1>File Crypto</h1>
+        <div class="upload-container">
+            <input type="file" id="fileInput" class="file-input">
+            <label for="fileInput" class="file-label">Choose a file</label>
+        </div>
+        <div class="operation-buttons">
+            <button onclick="handleOperation('encrypt')" class="btn encrypt">Encrypt</button>
+            <button onclick="handleOperation('decrypt')" class="btn decrypt">Decrypt</button>
+        </div>
+        <div id="status" class="status"></div>
+    </div>
+    <script src="animation.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
